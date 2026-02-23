@@ -3,7 +3,7 @@
 import os
 import sys
 import json
-from JSONScan import load_scan, analyze   
+from trollmode2 import load_scan, analyze   
 
 
 def save_report(findings, output_path):
