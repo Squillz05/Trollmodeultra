@@ -1,1 +1,5 @@
 sudo nmap -p- -sC -sV -O 10.10.10.0/24 -oN full_nmap_tcp.txt
+
+sudo nmap -p- -sC -sV -O 10.10.10.0/24 -oN nmap_full.txt -oG nmap_grep.txt
+
+sudo rustscan -a 10.10.10.0/24 --ulimit 5000 -- -sC -sV -oN rust_nmap.txt
