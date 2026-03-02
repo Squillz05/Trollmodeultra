@@ -1,0 +1,1 @@
+sudo nmap -p- -sC -sV -O 10.10.10.0/24 -oN full_nmap_tcp.txt
