@@ -46,17 +46,17 @@ def main():
     results = {}
 
     print(f"Loaded {len(targets)} Blue Team targets.")
-    print("Starting aggressive whatweb scan...\n")
+    print("Starting whatweb scan...\n")
 
     for ip in targets:
         print(f"Scanning {ip} ...")
         output = run_whatweb(ip)
 
         if output:
-            print(f"  [+] Found web info on {ip}")
+            print(f"  Found web info on {ip}")
             results[ip] = output
         else:
-            print(f"  [-] No web response from {ip}")
+            print(f"  No web response from {ip}")
 
     print("\nSaving results...")
 
